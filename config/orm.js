@@ -68,17 +68,7 @@ var orm = {
 			callback(result);
 		});
 	},
-	// orm to delete from the burger database - future use
-	delete: function (table, condition, callback) {
-		var queryString = 'DELETE FROM ' + table;
-		queryString = queryString + ' WHERE ';
-		queryString = queryString + condition;
-
-		connection.query(queryString, function (error, result) {
-			if (error) throw error;
-			callback(result);
-		});
-	}
+	
 };
 
 module.exports = orm;

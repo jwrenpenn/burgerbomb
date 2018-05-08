@@ -24,12 +24,7 @@ var burger = {
 			callback(res);
 		});
 	},
-	// orm to delete from the burger database - future use.
-	delete: function (condition, callback) {
-		orm.delete('burgers', condition, function (res) {
-			callback(res);
-		});
-	}
+	
 };
 
 module.exports = burger;
